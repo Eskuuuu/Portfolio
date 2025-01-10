@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+
+* {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+
+
+body {
+  background: linear-gradient( 0deg, #0E0C0E, #131214);
+  font-family: Raleway;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  color: #B7AB98;
+  width: 100vw;
+  
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+head {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.passion{
+  height: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+header {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+
+
+}
+
+
+.vasempaanreunaan{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.vasenpuoli{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.vasenpuoli2{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 98%;
+  height: 100%;
+
+}
+
+.oikeapuoli {
+   flex-direction: column;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   width: 96%;
+   height: 100%;
+}
+
+.oikeapuoli2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.kiinniToisiin {
+  margin: -5px 0;
+}
+
+.irtiToisiin{
+  margin-top: 9%;
+}
+
+.contactMe-button {
+  background-color:  rgba(231, 60, 55, 100%);
+  color: #ffffff;
+  border: none;
+  height: 36px;
+  width: 104px;
+  cursor: pointer;
+  transition: background-color 1s,
+    color 1s;
+  border-radius: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -6px;
+}
+
+.contactMe-button:hover {
+  opacity: 80%;
+}
+
+.contactMe-button:active {
+  opacity: 60%;
+}
+
+@media (min-width: 768px){
+  .contactMe-button {
+    width: 172px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 2560px){
+  .contactMe-button {
+    width: 344px;
+    font-size: 48px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 3500px){
+  .contactMe-button {
+    width: 544px;
+    font-size: 88px;
+    height: 90px;
+  }
+}
+
+
+a {
+  text-decoration: none;
+  color: #B7AB98;
+  margin: 0 14px;
+}
+
+.container{
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.container2{
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+
+.vieres {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  gap:4% ;
+}
+   
+
+img {
+  width: 100%;
+
+}
+
+img:hover{
+  opacity: 60%;
+}
+
+img.pieni{
+  
+  width: 100%;
+  height: 100%;
+}
+
+.ikoni{
+  height: 4vh;
+  width: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 320px;
+  width: 100%;
+  height: 100%;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  
+  
+}
+.footerInside{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 20%;
+  gap: 1dvh;
+
+  
+}
+
+.ellipse{
+  border-radius: 24px;
+  max-width: 90%;
+  
+}
+
+
+
+
+
+  @media (min-width: 768px){
+    .container{
+      max-width: 1080px;
+    }
+    .footer{
+      max-width: 1080px;
+    }
+    .ellipse{
+      max-width: 50%;
+    }
+    .container2{
+      max-width: 50%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+    }   
+    
+      
+    
+    
+  }
+
+  @media (min-width: 2560px){
+    .container{
+      max-width: 2160px;
+    }
+    .footer{
+      max-width: 2160px;
+  }
+  
+    
+  
+}
+
+.emptyspace{
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25%;
+  
+}
+
+.emptyspace2{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-top: 25%;
+  
+}
+
+
+
+
+
