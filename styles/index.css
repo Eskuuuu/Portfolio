@@ -305,6 +305,14 @@ img.pieni{
   
 }
 
+.emptyspace3{
+    height: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+  }
+
 
 
 
