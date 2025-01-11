@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- utf laittaa ääkköset toimimaan -->
+    <meta charset="UTF-8" />
+    <!-- width=device-width pakottaa sisällön skaalautumaan mobiililla "oikein" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- sivuston title. vaihda kuvaavammaksi -->
+    <title>Esa Iivonen Portfolio</title>
+    <!-- kutsutaan tyylitiedostoa tässä -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/components/nav.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="styles/components/text.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <div id="blur">
+    <nav>
+      <a href="index.html" class="tiivistaja"><img src="images/Vector.svg" class="ikoni" alt="koti kuvake"></a>
+      <a href="index.html#projektit" class="tiivistaja"> Projects</a>
+      <a href="aboutme.html" class="tiivistaja">About me</a>
+      <a href="#footer" class="contactMe-button tiivistaja">Contact me</a>
+    </nav>
+
+    <header>
+      <div class="container2 emptyspace2">
+        <h3> ESA IIVONEN</h3>
+      </div>
+    </header>
+
+    <main>
+      <div class="container2">
+        <img class="ellipse " src="images/Esa_Iivonen 2 (1).png" alt="Pic Home" />
+      </div>
+      <div class="container2">
+        <p class="background"> I'm Esa and I'm very interested in technology and how it can be used to create a profitable business, so that the customer experience is great. This is currently supported by my studies in Information Networks at Aalto university </p>
+      </div> 
+      <div class="container2">
+        <p class="background"> I'm strong in Javascript and Scala. My tech stack includes: React, Node.js, Express, SQL, MongoDB and Python. I also have experience making prototypes with Figma 
+          
+        </p>
+      </div>            
+     </main>
+
+     <footer class="container2">
+      <section id="footer" class="footer">
+        <div>
+          <h3> ESA IIVONEN </h3>
+          <a href="#modal" onclick="toggle()"><img src="images/ESKU AVATAR.png" class="esakuva" alt="Pic Esku Avatar"></a>
+        </div>
+        <div class="vali"> 
+            <h3>Phone: +358458490702</h3>
+            <a href="mailto:esa.iivonen@aalto.fi"><img class="ikoni" src="images/Email.svg" alt="Pic Email icon"><h3>Email</h3></a> 
+            <a href="https://www.linkedin.com/in/esaiivonen"><img class="ikoni" src="images/Linkedin.svg" alt="Pic Linkedin icon"><h3>Linkedin</h3></a>
+            <a href="https://github.com/Eskuuuu"><img class="ikoni" src="images/githublogo.svg" alt="Pic github icon"><h3>Github</h3></a>
+            <h3>REACH OUT!</h3>
+        </div>
+      </section>
+    </footer>
+    </div>
+    <!--Aukeava modaali-->
+    <div id="popup">
+      <a href="#modal" onclick="toggle()">
+        <button class="modal-close">
+          <div class="button-line"></div>
+          <div class="button-line"></div>
+        </button>
+      </a>
+      <h1>HEY! </h1>
+      <h3> This is your sign to reach out to me!</h3>
+      
+
+    </div> 
+    <script type="text/javascript">
+      function toggle(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active')
+      }
+    </script>
+  </body>
+
+  
+
+</html>

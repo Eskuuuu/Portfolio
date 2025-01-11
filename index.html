@@ -1,22 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- utf laittaa ääkköset toimimaan -->
-        <meta charset="UTF-8" />
-        <!-- width=device-width pakottaa sisällön skaalautumaan mobiililla "oikein" -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- sivuston title. vaihda kuvaavammaksi -->
-        <title>Esa Iivonen Portfolio</title>
-        <!-- kutsutaan tyylitiedostoa tässä -->
-        <link rel="stylesheet" href="styles/index.css" />
-    </head> 
+  <head>
+    <!-- utf laittaa ääkköset toimimaan -->
+    <meta charset="UTF-8" />
+    <!-- width=device-width pakottaa sisällön skaalautumaan mobiililla "oikein" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- sivuston title. vaihda kuvaavammaksi -->
+    <title>Esa Iivonen Portfolio</title>
+    <!-- kutsutaan tyylitiedostoa tässä -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/scrolldots.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/components/nav.css" />
+    <link rel="stylesheet" href="styles/components/text.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="icon" href="favicon.ico">
+  </head>
 
-    <body>
-        <nav> moi </nav>
+  <body>
+    <nav>
+        <a href="index.html" class="tiivistaja"><img src="images/Vector.svg" class="ikoni" alt="koti kuvake"></a>
+        <a href="index.html#projektit" class="tiivistaja"> Projects</a>
+        <a href="aboutme.html" class="tiivistaja">About me</a>
+        <a href="#footer" class="contactMe-button tiivistaja">Contact me</a>
+    </nav>
 
+    <header class="container emptyspace">
+      <section id="hero">
+        <h3 class="kiinniToisiin">ESA IIVONEN</h3>
+        <h1 class="kiinniToisiin">AMBITIOUS</h1>
+        <h1 class="red kiinniToisiin">DESIGNER</h1>
+        <h1 class="red kiinniToisiin">AND</h1>
+        <h2 class="kiinniToisiin">DEVELOPER</h2>
+      </section>
+    </header>
 
-    </body>
+    <main class="container">
 
+      <div id="projektit" class="vasempaanreunaan">
+        <h3 class="vasempaanreunaan">Projects</h3>
+      </div>
 
+      <div class="container">
+        <section class="vieres" id="projektit1">
+          <article class="vieres">
+            <div class="vasenpuoli">
+                <a href="https://kolmas-tila.vercel.app/"><img src="images/Kolmastila.png" alt="Pic of the kolmastila website"></a>
+            </div>
+            <div  class="oikeapuoli2">
+              <div>
+                <h3>Marketing campaign to encourage young people to use leisure facilities</h3>
+                <h3>Group: Joonas Koivu, Iiris Niskanen, Nina Saarto</h3>
+                <h3>Used: Figma, Css, Html, React, Javascript</h3>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="container vieres" id="projektit3">
+          <article class="vasenpuoli2">
+            <div>
+                <h3>Design program for home design using floor plans</h3>
+                <h3>Used: Figma, Scala, Java</h3>
+            </div>
+            
+          </article>
+          <article class="oikeapuoli2">
+            <img src="images/HomeDesignGame.png" alt="Pic of my Home Design progman" />
+          </article>
+        </section>
+
+      </div>
+
+    </main>
+    <footer class="container2">
+        <section id="footer" class="footer">
+          <div>
+            <h3> ESA IIVONEN </h3>
+            <a href="#modal" onclick="toggle()"><img src="images/ESKU AVATAR.png" class="esakuva" alt="Pic Esku Avatar"></a>
+          </div>
+          <div class="vali"> 
+              <h3>Phone: +358458490702</h3>
+              <a href="mailto:esa.iivonen@aalto.fi"><img class="ikoni" src="images/Email.svg" alt="Pic Email icon"><h3>Email</h3></a> 
+              <a href="https://www.linkedin.com/in/esaiivonen"><img class="ikoni" src="images/Linkedin.svg" alt="Pic Linkedin icon"><h3>Linkedin</h3></a>
+              <a href="https://github.com/Eskuuuu"><img class="ikoni" src="images/githublogo.svg" alt="Pic github icon"><h3>Github</h3></a>
+              <h3>REACH OUT!</h3>
+          </div>
+        </section>
+      </footer>
+    <div id="vertical-scroll-dots">
+      <div id="scroll-dot-container"></div>
+    </div>
+    <script defer src="JS/scrolldots.js"></script>
+  </body>
 </html>

@@ -1,0 +1,43 @@
+#scroll-dot-container{
+    position: fixed;
+    left: 16px;
+    top: 0;
+    width: 16px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    z-index: 4;
+}
+
+.scroll-dot{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.1s;
+}
+
+.scroll-dot.active{
+    background-color:rgba(231, 60, 55, 100%);
+}
+
+@media (max-width: 900px) {
+    #scroll-dot-container{
+        left: 4px;
+    }
+    .scroll-dot{
+        width: 12px;
+        height: 12px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    #scroll-dot-container{
+        display: none;
+    }
+}

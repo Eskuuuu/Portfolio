@@ -1,0 +1,39 @@
+nav {
+    
+    width: 100vw;
+    height: 10%;
+    background: linear-gradient( 0deg, #0E0C0E, #131214) ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+  }
+
+.tiivistaja{
+   margin: 0px;
+}
+
+
+
+  @media (min-width: 768px){
+    .tiivistaja{
+        font-size: 24px;
+    }
+  }
+
+
+  @media (min-width: 2560px){
+    .tiivistaja{
+        font-size: 48px;
+    }
+ 
+    }
+    @media (min-width: 3500px){
+        .tiivistaja{
+            font-size: 96px;
+        }
+      }
+
+
+
